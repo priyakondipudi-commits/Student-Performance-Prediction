@@ -41,7 +41,19 @@ study_hours = st.slider("📚 Study Hours", 0, 12, 5)
 
 attendance = st.slider("📅 Attendance (%)", 0, 100, 75)
 
+internal_marks = st.slider("📘 Internal Marks", 0, 100, 60)
+
+quiz_marks = st.slider("📝 Quiz Marks", 0, 100, 60)
+
+practical_marks = st.slider("🧪 Practical Marks", 0, 100, 60)
+
 previous_marks = st.slider("📝 Previous Marks", 0, 100, 60)
+
+project_submitted = st.selectbox(
+    "📂 Project Submitted",
+    ["Yes", "No"]
+)
+project_submitted = 1 if project_submitted == "Yes" else 0
 
 assignment = st.selectbox(
     "📂 Assignment Submitted",
@@ -52,8 +64,26 @@ assignment = 1 if assignment == "Yes" else 0
 
 if st.button("🔍 Predict Result"):
 
-    prediction = model.predict([[study_hours, attendance, previous_marks, assignment]])
-    probability = model.predict_proba([[study_hours, attendance, previous_marks, assignment]])
+    prediction = model.predict([[
+    study_hours,
+    attendance,
+    previous_marks,
+    assignment,
+    internal_marks,
+    quiz_marks,
+    practical_marks,
+    project_submitted
+    ]])
+    probability = model.predict_proba([[
+    study_hours,
+    attendance,
+    previous_marks,
+    assignment,
+    internal_marks,
+    quiz_marks,
+    practical_marks,
+    project_submitted
+    ]])
     confidence = max(probability[0]) * 100
 
     if prediction[0] == 1:
