@@ -1,74 +1,99 @@
-<<<<<<< HEAD
-# Student Performance Prediction using Machine Learning
+# 🎓 AI Powered Student Performance Prediction System
 
-## Project Description
-This project predicts whether a student will Pass or Fail based on:
-- Study Hours
-- Attendance
-- Previous Marks
-- Assignment Submission
+An intelligent Machine Learning web application that predicts whether a student is likely to **PASS** or **FAIL** based on academic performance.
 
-## Technologies Used
+---
+
+## 🚀 Features
+
+- 👤 Student Name & Roll Number
+- 🏫 Department Selection
+- 📚 Study Hours Input
+- 📊 Attendance Percentage
+- 📝 Previous Marks
+- ✅ Assignment Submission Status
+- 🤖 AI-Based PASS/FAIL Prediction
+- 🎯 Confidence Score
+- ⭐ Performance Level Analysis
+- 💡 Personalized Improvement Suggestions
+- 📈 Performance Summary Dashboard
+
+---
+
+## 🛠️ Technologies Used
+
 - Python
 - Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
+- Scikit-Learn
+- Streamlit
 - Joblib
+- Git
+- GitHub
 
-## Machine Learning Algorithm
-- Logistic Regression
+---
 
-## Features
-- Data Analysis
-- Data Visualization
-- Model Training
-- Model Prediction
-- Save and Load Model
-- User Input Prediction
+## 📂 Project Structure
 
-## Project Files
-- student_prediction.ipynb
-- dataset.csv
-- student_model.pkl
-- README.md
+```
+Student-Performance-Prediction/
+│── app.py
+│── dataset.csv
+│── student_model.pkl
+│── student_prediction.ipynb
+│── README.md
+```
 
-## Author
-=======
-# Student Performance Prediction using Machine Learning
+---
 
-## Project Description
-This project predicts whether a student will Pass or Fail based on:
-- Study Hours
-- Attendance
-- Previous Marks
-- Assignment Submission
+## ▶️ How to Run
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Joblib
+### Clone Repository
 
-## Machine Learning Algorithm
-- Logistic Regression
+```bash
+git clone https://github.com/priyakondipudi-commits/Student-Performance-Prediction.git
+```
 
-## Features
-- Data Analysis
-- Data Visualization
-- Model Training
-- Model Prediction
-- Save and Load Model
-- User Input Prediction
+### Install Dependencies
 
-## Project Files
-- student_prediction.ipynb
-- dataset.csv
-- student_model.pkl
-- README.md
+```bash
+pip install -r requirements.txt
+```
 
-## Author
->>>>>>> 2f773d3b20af08050d24c9c8ba31b886a8e0b50f
-KONDIPUDI DURGA BHAVANI
+### Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📷 Application Features
+
+- AI Prediction
+- Confidence Score
+- Performance Level
+- Suggestions
+- Performance Dashboard
+
+---
+
+## 🎯 Future Improvements
+
+- Student Login System
+- Database Integration
+- PDF Report Generation
+- Email Notifications
+- Charts & Analytics
+- Multiple ML Models Comparison
+
+---
+
+## 👩‍💻 Developed By
+
+**Kondipudi Durga Bhavani**
+
+B.Tech – Artificial Intelligence & Data Science
+
+Python | Machine Learning | Streamlit | Git | GitHub
+
+⭐ If you like this project, don't forget to Star this repository.
